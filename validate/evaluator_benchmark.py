@@ -8,9 +8,9 @@ import torch.nn.functional as F
 import torchvision.transforms as transforms
 from torchvision.transforms import InterpolationMode
 
-from utils_gpu.datasets import TensorDataset, MultiEpochsDataLoader
-from utils_gpu.tools import AverageMeter, accuracy, get_time, Logger
-from utils_gpu.transforms import (
+from utils.datasets import TensorDataset, MultiEpochsDataLoader
+from utils.tools import AverageMeter, accuracy, get_time, Logger
+from utils.transforms import (
     DiffAug,
     mix_aug,
     decode_fn,
@@ -18,8 +18,8 @@ from utils_gpu.transforms import (
     RandomFactorResizedCrop,
 )
 
-from utils_gpu.load_dataset import load_normalize, load_dataset
-from utils_gpu.load_model import load_model
+from utils.load_dataset import load_normalize, load_dataset
+from utils.load_model import load_model
 from validate.losses_benchmark import compute_loss
 
 
